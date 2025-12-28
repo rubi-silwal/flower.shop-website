@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petals & Blooms | Premium Flower Shop</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Menu -->
+    <nav id="sidebar">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Our Story</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Bestsellers</a></li>
+            <li><a href="#care" onclick="toggleMenu()">Flower Care</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">Petals & Blooms</div>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+    <!-- Home Section (Hero) -->
+    <section id="home" class="hero">
+        <img src="flora.png" alt="Background" class="hero-img">
+        <div class="hero-content">
+            <h1>Nature's Best Gifts</h1>
+            <p>We source the rarest and freshest blooms from sustainable farms around the globe to ensure your moments are wrapped in beauty.</p>
+            <a href="#services" class="btn">View Our Flowers</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="info-grid">
+            <div class="info-text">
+                <h2>Our Floral Philosophy</h2>
+                <p>At Petals & Blooms, we believe every flower is a silent messenger of emotion. Whether it’s a gesture of love, a token of gratitude, or a celebration of life, our arrangements are designed to speak your heart.</p>
+                <p>Our florists hand-pick each stem every morning, ensuring that only the most vibrant, healthy, and fragrant flowers make it into your bouquet. We specialize in both local favorites and exotic imports.</p>
+            </div>
+            <div class="info-img">
+                <img src="https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?auto=format&fit=crop&w=600" alt="Florist working" style="width:100%; border-radius: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section id="services" class="section-padding" style="background: #fffafa;">
+        <h2 class="section-title">Our Best Sellers</h2>
+        <p class="section-subtitle">From romantic roses to cheerful sunflowers, explore our most-loved arrangements designed by master florists.</p>
+        
+        <div class="flower-grid">
+            <!-- Flower Card 1 -->
+            <div class="flower-card">
+                <img src="tulip.png" alt="Tulips">
+                <div class="overlay">
+                    <div class="card-header">
+                        <h3>Spring Tulips</h3>
+                        <span class="price">NPR 2,500</span>
+                    </div>
+                    <p class="desc">A symbol of perfect love. These vibrant tulips are sourced directly from Holland and are known for their long-lasting freshness and bright, cup-shaped petals.</p>
+                </div>
+            </div>
+            <!-- Flower Card 2 -->
+            <div class="flower-card">
+                <img src="orchid.png" alt="Orchid">
+                <div class="overlay">
+                    <div class="card-header">
+                        <h3>Midnight Orchid</h3>
+                        <span class="price">NPR 1,800</span>
+                    </div>
+                    <p class="desc">Exotic and sophisticated, the Midnight Orchid represents luxury and strength. It is an ideal gift for modern interiors and professional workspaces.</p>
+                </div>
+            </div>
+            <!-- Flower Card 3 -->
+            <div class="flower-card">
+                <img src="rose.png" alt="Rose">
+                <div class="overlay">
+                    <div class="card-header">
+                        <h3>Classic Red Roses</h3>
+                        <span class="price">NPR 2,000</span>
+                    </div>
+                    <p class="desc">Our signature deep-red roses are the ultimate symbol of passion. Each stem is 60cm long with a large, velvety head that opens beautifully over time.</p>
+                </div>
+            </div>
+            <!-- Flower Card 4 -->
+            <div class="flower-card">
+                <img src="sunflower.png" alt="Sunflower">
+                <div class="overlay">
+                    <div class="card-header">
+                        <h3>Bright Sunflowers</h3>
+                        <span class="price">NPR 2,500</span>
+                    </div>
+                    <p class="desc">Radiating happiness and positivity, our Sunflowers are picked at the peak of their bloom to ensure they bring sunshine into any room they enter.</p>
+                </div>
+            </div>
+             <!-- Flower Card 5 -->
+            <div class="flower-card">
+                <img src="mxed.jfif" alt="Mixed">
+                <div class="overlay">
+                    <div class="card-header">
+                        <h3>Mixed Flowers</h3>
+                        <span class="price">NPR 3,500</span>
+                    </div>
+                    <p class="desc">A vibrant mix of seasonal blooms, carefully selected to create a cheerful and elegant arrangement. Perfect for celebrations and everyday joy.</p>
+                </div>
+            </div>
+             <!-- Flower Card 6 -->
+            <div class="flower-card">
+                <img src="lily.png" alt="Lily">
+                <div class="overlay">
+                    <div class="card-header">
+                        <h3>Lovely Lilies</h3>
+                        <span class="price">NPR 3,500</span>
+                    </div>
+                    <p class="desc">Radiating elegance and grace, our Lilies are hand-selected for their long stems and full blooms. They make a perfect addition to any elegant setting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flower Care Section -->
+    <section id="care" class="section-padding">
+        <h2 class="section-title">Flower Care Tips</h2>
+        <p class="section-subtitle">Make your blooms last longer with these simple, expert-approved care instructions.</p>
+        <div class="info-grid">
+            <div class="info-img">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600" alt="Watering flowers" style="width:100%; border-radius: 20px;">
+            </div>
+            <div class="info-text">
+                <p><strong>1. Trim the Stems:</strong> Cut 1-2 inches off the stems at a 45-degree angle before placing them in a vase. This allows for better water absorption.</p>
+                <p><strong>2. Fresh Water:</strong> Change the water every two days. Always use lukewarm water as flowers find it easier to drink than cold water.</p>
+                <p><strong>3. Keep it Cool:</strong> Place your bouquet away from direct sunlight, heating vents, and ripening fruit (which releases gases that age flowers).</p>
+                <p><strong>4. Remove Foliage:</strong> Ensure no leaves are submerged in the water to prevent bacterial growth and keep the water clear.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>Petals & Blooms</h3>
+                <p>We are a boutique floral studio dedicated to the art of arrangement. We offer same-day delivery for all orders placed before 2:00 PM.</p>
+                <div class="social-footer">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+            <div>
+                <h4>Our Services</h4>
+                <p>Wedding Decor</p>
+                <p>Event Planning</p>
+                <p>Corporate Gifting</p>
+                <p>Subscription Boxes</p>
+            </div>
+            <div>
+                <h4>Get In Touch</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Floral Lane, Blossom City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> hello@petalsandblooms.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Petals & Blooms | Premium Floral Experiences
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
